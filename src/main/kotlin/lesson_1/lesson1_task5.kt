@@ -7,8 +7,8 @@ fun main(){
     val secondsRemainder: Int
 
     hour=seconds/3600
-    minutes=(seconds-3600*hour)/60
-    secondsRemainder=(seconds-3600*hour-60*minutes)/60
+    minutes=(seconds % 3600)/60
+    secondsRemainder=(seconds % 3600) % 60
 
     if (hour < 10) print("0$hour:") else print("$hour:")
     if (minutes < 10) print("0$minutes:") else print("$minutes:")
