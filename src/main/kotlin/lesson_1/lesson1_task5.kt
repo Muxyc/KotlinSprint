@@ -1,17 +1,17 @@
 package lesson_1
 
-fun main(){
+fun main() {
     val seconds: Int = 6480
     val hour: Int
     val minutes: Int
     val secondsRemainder: Int
 
-    hour=seconds/3600
-    minutes=(seconds % 3600)/60
-    secondsRemainder=(seconds % 3600) % 60
+    hour = seconds / 3600
+    minutes = (seconds % 3600) / 60
+    secondsRemainder = (seconds % 3600) % 60
+    println(
+        String.format("%02d", hour) + ":" + String.format("%02d", minutes) + ":" + String.format("%02d",secondsRemainder)
+    )
 
-    if (hour < 10) print("0$hour:") else print("$hour:")
-    if (minutes < 10) print("0$minutes:") else print("$minutes:")
-    if (secondsRemainder < 10) println("0$secondsRemainder") else println("$secondsRemainder")
 
 }
