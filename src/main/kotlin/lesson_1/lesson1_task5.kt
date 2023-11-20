@@ -12,6 +12,4 @@ fun main() {
     println(
         String.format("%02d", hour) + ":" + String.format("%02d", minutes) + ":" + String.format("%02d",secondsRemainder)
     )
-
-
 }
