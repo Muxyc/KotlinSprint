@@ -6,8 +6,8 @@ fun main() {
     val personPatronymic: String = "Сергеевна"
     var personalAeg: Int = 20
 
-    println(personLastName + " " + personFirstName + " " + personPatronymic + ", " + personalAeg)
+    println("$personLastName $personFirstName $personPatronymic, $personalAeg")
     personLastName = "Сидорова"
     personalAeg = 22
-    println(personLastName + " " + personFirstName + " " + personPatronymic + ", " + personalAeg)
+    println("$personLastName $personFirstName $personPatronymic, $personalAeg")
 }
