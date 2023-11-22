@@ -13,6 +13,6 @@ fun main() {
 
     println(
         "Благоприятные ли условия сейчас для роста бобовых? " +
-                "${weather && tent && humidity == 20 && season != NO_GOOD_SEASON}"
+                "${weather && tent && humidity == GOOD_HUMIDITY && season != NO_GOOD_SEASON}"
     )
 }
